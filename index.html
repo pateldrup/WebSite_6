@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes – Alani Nu Clone</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        background: #fff;
+    }
+
+    .navbar {
+        width: 100%;
+        padding: 20px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 45px;
+        width: auto;
+    }
+
+    .logo span {
+        color: #000000;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+        font-size: 16px;
+    }
+
+    .nav-links li {
+        cursor: pointer;
+        color: #444;
+    }
+
+    .kamlesh {
+        display: flex;
+        gap: 19px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-links .active {
+        color: #1bbfd1;
+        font-weight: 600;
+    }
+
+    .nav-icons span {
+        margin-left: 18px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .banner {
+        background: linear-gradient(to right, #67d4e5, #ffb5a6);
+        color: white;
+        background-image: url(https://res.cloudinary.com/dnt4zhihw/image/upload/v1763008447/Screenshot_2025-11-13_100217_z7k85m.png);
+        text-align: center;
+        background-size: 100% 200%;
+        background-repeat: no-repeat;
+        padding: 100px;
+        font-size: 60px;
+        height: 20vw;
+        font-weight: bold;
+        font-size: vw;
+        padding-top: 7%;
+    }
+
+    .banner h1 {
+        font-size: 60px;
+        color: white;
+        font-weight: 700;
+    }
+
+    .filter-box {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px 60px;
+    }
+
+    .filter-box select {
+        padding: 10px 18px;
+        border-radius: 6px;
+        border: 1px solid #bbb;
+        outline: none;
+    }
+
+    .recipe-section {
+        gap: 40px;
+        padding: 40px 60px;
+    }
+
+    .recipe-image img {
+        width: 420px;
+        border-radius: 10px;
+    }
+
+    .recipe-info {
+        max-width: 600px;
+    }
+
+    .recipe-info h2 {
+        font-size: 28px;
+        color: #38bdb9;
+        margin-bottom: 16px;
+    }
+
+    .desc {
+        font-size: 15px;
+        color: #555;
+        margin-bottom: 14px;
+    }
+
+    .tag {
+        display: inline-block;
+        background: #d4f8f8;
+        color: #1cb8be;
+        padding: 6px 20px;
+        border-radius: 20px;
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .author {
+        font-size: 13px;
+        color: #777;
+        margin-bottom: 20px;
+    }
+
+    .oat-btn {
+        background: #553c9a;
+        padding: 14px 40px;
+        font-size: 16px;
+        border-radius: 40px;
+        border: none;
+        color: white;
+    }
+
+    .alani-footer {
+        background: linear-gradient(to right, #c5ffe9, #d8c8ff);
+        padding: 50px 10%;
+        color: #5c5b5b;
+        font-size: 14px;
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-weight: bold;
+        margin-bottom: 30px;
+        gap: 30px;
+    }
+
+    .footer-links div p {
+        margin-bottom: 8px;
+        cursor: pointer;
+    }
+
+    .footer-btn {
+        background: #7b67d0;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 40px;
+        font-size: 13px;
+        margin-bottom: 20px;
+        border: none;
+        cursor: pointer;
+        width: 220px;
+        font-weight: bold;
+    }
+
+    .footer-bottom {
+        background: #7b67d0;
+        padding: 20px 10%;
+        color: white;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-bottom .right span {
+        margin-left: 25px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+
+    
+    <header class="navbar">
+        <div class="logo">
+            <img
+                src="https://www.alaninu.com/cdn/shop/files/Alani_Logo_New_68ffd03e-ed6d-45ae-9d84-97f57d8061cb_200x.png?v=1643673734">
+        </div>
+
+        <ul class="nav-links">
+            <li>SHOP</li>
+            <li>REWARDS</li>
+            <li class="active">RECIPES</li>
+            <li>LEARN</li>
+        </ul>
+
+        <div class="nav-icons">
+            <span><img src="https://i.ibb.co/VP75Z3x/Screenshot-2025-12-21-220732.png" alt="Screenshot 2025 12 21 220732" border="0"></span>
+            <span><img src="https://i.ibb.co/99L4yjqb/Screenshot-2025-12-21-220925.png" alt="Screenshot 2025 12 21 220925" border="0"></span>
+            <span><img src="https://i.ibb.co/4nR8cTgD/Screenshot-2025-12-21-221055.png" alt="Screenshot 2025 12 21 221055" border="0"></span>
+        </div>
+    </header>
+
+   
+    <section class="banner">
+        <h1>Recipes</h1>
+    </section>
+
+   
+    <div class="filter-box">
+        <select>
+            <option>All Categories</option>
+            <option>Breakfast</option>
+            <option>Snacks</option>
+            <option>Dessert</option>
+        </select>
+    </div>
+
+    
+    <section class="recipe-section">
+        <div class="kamlesh">
+            <div class="recipe-image">
+                <img src="https://www.alaninu.com/cdn/shop/articles/Image_6_600x.jpg?v=1685994150" alt="">
+            </div>
+
+            <div class="recipe-info">
+                <h2>STRAWBERRY AND CREAM OATMEAL</h2>
+
+                <p class="desc">
+                    Time oat! Take a break and check out this quick and delish breakfast recipe.
+                    Our Strawberries & Cream Oatmeal will make you a morning person.
+                </p>
+
+                <span class="tag">Breakfast</span>
+
+                <p class="author">
+                    by Alani Nutrition &nbsp; | &nbsp; January 12, 2022
+                </p>
+
+                <button class="oat-btn">OAT YEAH</button>
+            </div>
+        </div>
+        <div class="kamlesh">
+            <div class="recipe-image">
+                <img src="https://www.alaninu.com/cdn/shop/articles/MicrosoftTeams-image_1_600x.png?v=1686241991"
+                    alt="">
+            </div>
+
+            <div class="recipe-info">
+                <h2>CHOCOLATE LOVER'S COLLAGEN SKILLET COOKIE</h2>
+
+                <p class="desc">
+                    If you haven’t baked with our Unflavored Collagen Peptides yet, this is your sign to start! This
+                    Chocolate Lover’s Collagen Skillet Cookie is choc-full of yum.
+                </p>
+
+                <span class="tag">Treats</span>
+
+                <p class="author">
+                    by Alani Nutrition &nbsp; | &nbsp; January 12, 2022
+                </p>
+
+                <button class="oat-btn">DISH IT OUT</button>
+            </div>
+        </div>
+        <div class="kamlesh">
+            <div class="recipe-image">
+                <img src="https://www.alaninu.com/cdn/shop/articles/Image_4_600x.jpg?v=1641982931" alt="">
+            </div>
+
+            <div class="recipe-info">
+                <h2>FLUFFY PROTEIN TOASTER WAFFLES</h2>
+
+                <p class="desc">
+                    Rushing out the door without breakfast again? We get it! Our make-ahead Fluffy Protein Toaster
+                    Waffles
+                    are the perfect solution.
+                </p>
+
+                <span class="tag">Breakfast</span>
+
+                <p class="author">
+                    by Alani Nutrition &nbsp; | &nbsp; January 12, 2022
+                </p>
+
+                <button class="oat-btn">STACK 'EM UP</button>
+            </div>
+        </div>
+        <div class="kamlesh">
+            <div class="recipe-image">
+                <img src="https://www.alaninu.com/cdn/shop/articles/Image_3_600x.jpg?v=1641982884" alt="">
+            </div>
+
+            <div class="recipe-info">
+                <h2>BREEZEBERRY ENERGY SLUSHIE</h2>
+
+                <p class="desc">
+                    Let’s cool off and go for a spin! Breezeberry Energy is a whole lot more refreshing in this
+                    berrylicious
+                    whirlwind of a slushie.
+                </p>
+
+                <span class="tag">Smoothies</span>
+
+                <p class="author">
+                    by Alani Nutrition &nbsp; | &nbsp; January 12, 2022
+                </p>
+
+                <button class="oat-btn">IT'S A BREEZE</button>
+            </div>
+        </div>
+        <div class="kamlesh">
+            <div class="recipe-image">
+                <img src="https://www.alaninu.com/cdn/shop/articles/Image_6_600x.jpg?v=1685994150" alt="">
+            </div>
+
+            <div class="recipe-info">
+                <h2>PINEAPPLE PEACH POPSICLES</h2>
+
+                <p class="desc">
+                    Pop it like it’s hot. These Pineapple Peach Popsicles will cool you down and have you feeling
+                    hydrated
+                    before you know it.
+
+                </p>
+
+                <span class="tag">Treats</span>
+
+                <p class="author">
+                    by Alani Nutrition &nbsp; | &nbsp; January 12, 2022
+                </p>
+
+                <button class="oat-btn">PEACHY POPS</button>
+            </div>
+        </div>
+        <div class="kamlesh">
+            <div class="recipe-image">
+                <img src="https://www.alaninu.com/cdn/shop/articles/Image_1_6746fd9b-4c88-4007-94a7-54467ba40087_600x.jpg?v=1641982771"
+                    alt="">
+            </div>
+            <div class="recipe-info">
+                <h2>CHOCOLATE PROTEIN NICE CREAM</h2>
+
+                <p class="desc">
+                    Chocolate Protein Nice Cream — Nope, that’s not a typo. Our take on a healthier ice cream
+                    alternative
+                    will curb those sweet cravings and help you reach your protein goals!
+                </p>
+
+                <span class="tag">Treats</span>
+
+                <p class="author">
+                    by Alani Nutrition &nbsp; | &nbsp; January 12, 2022
+                </p>
+
+                <button class="oat-btn">PEACHY POPS</button>
+            </div>
+        </div>
+        <div class="kamlesh">
+            <div class="recipe-image">
+                <img src="https://www.alaninu.com/cdn/shop/articles/Image_600x.jpg?v=1641982730" alt="">
+            </div>
+
+            <div class="recipe-info">
+                <h2>PEANUT BUTTER MUNCHIES BROWNIES</h2>
+
+                <p class="desc">
+                    When in doubt, just add peanut butter. Our Peanut Butter Munchies Brownies are here for both the
+                    chocolate & peanut butter lovers.
+                </p>
+
+                <span class="tag">Treats</span>
+
+                <p class="author">
+                    by Alani Nutrition &nbsp; | &nbsp; January 12, 2022
+                </p>
+
+                <button class="oat-btn">BETTER BROWNIES</button>
+            </div>
+        </div>
+        <div class="kamlesh">
+            <div class="recipe-image">
+                <img src="https://www.alaninu.com/cdn/shop/articles/Image_1_600x.jpg?v=1641932392" alt="">
+            </div>
+
+            <div class="recipe-info">
+                <h2>MUNCHIES PROTEIN COOKIE DOUGH</h2>
+
+                <p class="desc">
+                    Forget the guilt and indulge in this Edible Cookie Dough recipe. Our Munchies Protein Powder makes
+                    for
+                    an easy go-to protein addition to many recipes.
+                </p>
+
+                <span class="tag">Treats</span>
+
+                <p class="author">
+                    by Alani Nutrition &nbsp; | &nbsp; January 12, 2022
+                </p>
+
+                <button class="oat-btn">COOKIE MONSTER</button>
+            </div>
+        </div>
+
+    </section>
+    <footer class="alani-footer">
+        <div class="footer-links">
+
+            <div>
+                <p>SHOP</p>
+                <p>REWARDS</p>
+                <p>RECIPES</p>
+                <p>AMBASSADOR PROGRAM</p>
+            </div>
+
+            <div>
+                <p>FIND A STORE</p>
+                <p>ABOUT ALANI</p>
+                <p>FAQS</p>
+                <p>RETURNS POLICY</p>
+                <p>SHIPPING POLICY</p>
+            </div>
+
+            <div>
+                <p>FOLLOW US</p>
+                <div class="box">
+                    <p>INSTAGRAM</p>
+                    <p>TIKTOK</p>
+                    <p>META</p>
+                    <p>X</p>
+                </div>
+            </div>
+
+            <div>
+                <button class="footer-btn">DO NOT SELL OR SHARE MY PERSONAL INFORMATION</button>
+                <div class="logo">
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
