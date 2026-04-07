@@ -22,11 +22,13 @@ HTML5
 CSS3 (Flexbox + Grid)
 📸 Screenshots
 
-(Add 3–4 screenshots here 🔥 for better GitHub impact)
+<img width="1375" height="775" alt="image" src="https://github.com/user-attachments/assets/151a9fd1-20ee-4f2a-9d8c-5ac9877d4e3d" />
+
 
 📂 Project Structure
 
 Alani-Clone/
+
 │── index.html
 
 │── README.md
